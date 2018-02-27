@@ -1,0 +1,35 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*Color Palette
+dark teal: #00A8C6;
+slate gray: #556270;
+cream: #F9F2E7;
+neon green: #AEE239;
+dark neon green: #8FBE00;
+*/
+
+body {
+  margin-top: 70px;
+}
+
+// Navbar styling
+.navbar {
+  background: #AEE239;
+}
+
+.navbar-default {
+  border: #556270;
+}
+
+.navbar-default .navbar-brand {
+  color: #333;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #556270;
+}
+
+.navbar-default .navbar-nav li.active > a {
+  background-color: #AEE239;
+}
