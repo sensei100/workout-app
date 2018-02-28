@@ -32,7 +32,7 @@ body {
 }
 
 .navbar-default .navbar-brand {
-  color: #333;
+  color: #232b2b;
 }
 
 .navbar-default .navbar-brand:hover {
@@ -47,4 +47,16 @@ body {
 .sign-link a {
   color: #00A8C6;
   font-size: 1.2em;
+}
+
+#error_explanation {
+  background-color: #8FBE00;
+  color: #232b2b;
+  text-align: left;
+  padding: 5px 20px;
+  margin-bottom: 30px;
+}
+
+#error_explanation h2 {
+  font-size: 150%;
 }
