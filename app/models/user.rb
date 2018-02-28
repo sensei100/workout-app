@@ -6,4 +6,9 @@ class User < ApplicationRecord
 
   has_many :exercises
 
+  def full_name
+    "
+fi#{first_name} #{last_name}"
+  end
+
 end
