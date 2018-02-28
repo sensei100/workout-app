@@ -10,7 +10,14 @@ dark neon green: #8FBE00;
 */
 
 body {
+  font-family: "Lato";
   margin-top: 70px;
+}
+
+.btn-primary {
+  background: #00A8C6;
+  border: 1px solid #00A8C6;
+  color: #F9F2E7;
 }
 
 // Navbar styling
@@ -34,4 +41,10 @@ body {
 
 .navbar-default .navbar-nav li.active > a {
   background-color: #AEE239;
+}
+
+//Sign up -- Sign in
+.sign-link a {
+  color: #00A8C6;
+  font-size: 1.2em;
 }
