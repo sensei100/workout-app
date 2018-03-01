@@ -64,6 +64,15 @@ footer {
   font-size: 1.2em;
 }
 
+.link {
+  color: #00A8C6;
+  font-size: 1.2em;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
 #error_explanation {
   background-color: #8FBE00;
   color: #232b2b;
