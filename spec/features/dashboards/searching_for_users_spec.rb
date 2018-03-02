@@ -14,7 +14,7 @@ RSpec.feature "Searching for users" do
 
   scenario "returns all users with an existing name" do
     visit "/"
-    fill_in "search-name", with: "Doe"
+    fill_in "search_name", with: "Doe"
     click_button "Search"
 
     expect(page).to have_content(@john.full_name)

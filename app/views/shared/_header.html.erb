@@ -10,6 +10,16 @@
         </button>
         <%= link_to "Athletes Den", root_path, class: "navbar-brand" %>
       </div>
+
+      <%= form_tag(search_dashboards_path,
+                      class: "navbar-form navbar-left",
+                      role: "search") do %>
+        <div class="form-group">
+          <%= text_field_tag :search_name, nil, placeholder: "Search for friends", class: "form-control" %>
+        </div>
+        <%= submit_tag "Search", class: "btn btn-primary" %>
+      <% end %>
+      
       <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><%= link_to "Home", root_path %></li>
