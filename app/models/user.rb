@@ -35,6 +35,6 @@ class User < ApplicationRecord
   end
 
   def current_friendship(friend)
-    friendships.where(friend: friend)
+    friendships.where(friend: friend).first
   end
 end
