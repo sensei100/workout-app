@@ -41,7 +41,7 @@
 </div>
 
 <div class="col-md-5 col-xs-12">
-  <div id="chat-window">
+  <div id="chat-window" class="col-md-12">
     <header class="text-center">Channel: <%= current_room.name %></header>
 
     <div class="col-md-2" id="followers">
@@ -57,13 +57,13 @@
           <%= render partial: "shared/message", locals: { message: message } %>
         <% end %>
       </div>
-    </div>
 
-    <div id="form-box">
-      <%= form_for @message do |f| %>
-        <%= f.text_field :body, id: "message-field", class: "form-control pull-left" %>
-        <%= f.submit "Post", class: "btn btn-success", id: "post-btn" %>
-      <% end %>
+      <div id="form-box">
+        <%= form_for @message do |f| %>
+          <%= f.text_field :body, id: "message-field", class: "form-control pull-left" %>
+          <%= f.submit "Post", class: "btn btn-success", id: "post-btn" %>
+        <% end %>
+      </div>
     </div>
   </div>
   <h1 class="text-center">My Friends</h1>
