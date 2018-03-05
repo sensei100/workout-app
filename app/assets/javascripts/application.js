@@ -15,5 +15,5 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require d3
-//= require rails-ujs
+// require rails-ujs
 //= require_tree .
