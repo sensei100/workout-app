@@ -26,8 +26,8 @@ RSpec.feature "Sending messages" do
     expect(page).to have_content("Hello")
 
     within("#followers") do
-      expect(page).to have_link("@sarah.full_name")
-      expect(page).to have_link("@henry.full_name")
+      expect(page).to have_link(@sarah.full_name)
+      expect(page).to have_link(@henry.full_name)
     end
   end
 end
