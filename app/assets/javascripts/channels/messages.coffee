@@ -14,10 +14,10 @@ App.messages = App.cable.subscriptions.create "MessagesChannel",
       $(".message-row").first().remove()
 
     $("#chat-box").append(data)
-    $("#message-field").val("")
+    $("#message-field").val('')
 
-    checkIn: (roomId) ->
-      if roomId
-        @perform 'checkIn', room_id: roomId
-      else
-        @perform 'checkOut'
+  checkIn: (roomId) ->
+    if roomId
+      @perform 'checkIn', room_id: roomId
+    else
+      @perform 'checkOut'
